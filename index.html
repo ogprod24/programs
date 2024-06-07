@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج سياحي</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="program-type">
+                <input type="text" id="program-type-input" placeholder="نوعية البرنامج السياحي">
+            </div>
+            <div class="duration">
+                <input type="text" id="duration-input" placeholder="عدد الأيام و الليالي">
+            </div>
+        </header>
+        <main>
+            <section id="details-section">
+                <h2>تفاصيل الرحلة:</h2>
+                <div id="details">
+                    <input type="text" class="detail-input" placeholder="أدخل تفاصيل الرحلة هنا">
+                </div>
+                <button id="add-detail">إضافة سطر</button>
+            </section>
+            <section id="photos-section">
+                <h2>صور من الرحلة</h2>
+                <div class="photo-frame"><input type="file" accept="image/*"></div>
+                <div class="photo-frame"><input type="file" accept="image/*"></div>
+                <div class="photo-frame"><input type="file" accept="image/*"></div>
+                <div class="photo-frame"><input type="file" accept="image/*"></div>
+            </section>
+            <button id="download-pdf">تحميل كملف PDF</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
